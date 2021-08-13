@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ThemeOverlay.search" parent="Theme.Map4D_App">
+
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/black</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/gray</item>
+
+    </style>
+
+    <style name="ButtonLocationRoute" parent="Widget.AppCompat.Button">
+        <item name="android:background">@drawable/background_button_destination</item>
+    </style>
+</resources>

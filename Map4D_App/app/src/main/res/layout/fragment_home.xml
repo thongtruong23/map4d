@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HomeFragment">
+
+    <vn.map4d.map.core.MFMapView
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.SearchView
+                        android:id="@+id/search_bar"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:layout_gravity="center"
+                        android:layout_weight="9"
+                        android:background="@drawable/background_search_view"
+                        android:theme="@style/ThemeOverlay.search"
+                        app:iconifiedByDefault="false"
+                        app:queryHint="@string/search_hint_text"
+                        app:searchIcon="@drawable/ic_search" />
+
+<!--                    <EditText-->
+<!--                        android:id="@+id/edt_search"-->
+<!--                        android:layout_width="0dp"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:layout_height="40dp"-->
+<!--                        android:layout_weight="9"-->
+<!--                        android:hint="Search Here..."-->
+<!--                        android:background="@drawable/background_search_view" />-->
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_profile"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginStart="10dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_user" />
+
+                </LinearLayout>
+
+<!--                <HorizontalScrollView-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="10dp"-->
+<!--                    android:layout_marginEnd="10dp"-->
+<!--                    android:autofillHints="@string/appbar_scrolling_view_behavior"-->
+<!--                    android:scrollbars="none">-->
+
+<!--                    <LinearLayout-->
+<!--                        android:layout_marginTop="10dp"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:gravity="center_horizontal"-->
+<!--                        android:orientation="horizontal">-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_restaurant"-->
+<!--                            android:layout_width="115dp"-->
+<!--                            android:layout_height="34dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/red"-->
+<!--                            android:drawableLeft="@drawable/ic_restaurent"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="@string/restaurant"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_atm"-->
+<!--                            android:layout_width="wrap_content"-->
+<!--                            android:layout_height="match_parent"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/purple_300"-->
+<!--                            android:drawableLeft="@drawable/ic_atm"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="@string/atm"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_cafe"-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/orange_500"-->
+<!--                            android:drawableLeft="@drawable/ic_cafe"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="Cà phê"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_parking"-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/green"-->
+<!--                            android:drawableLeft="@drawable/ic_parking"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="@string/parking"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_school"-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/blue"-->
+<!--                            android:drawableLeft="@drawable/ic_school"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="@string/school"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+<!--                        <Button-->
+<!--                            android:id="@+id/btn_more"-->
+<!--                            android:layout_width="fill_parent"-->
+<!--                            android:layout_height="35dp"-->
+<!--                            android:layout_gravity="center"-->
+<!--                            android:layout_marginStart="10dp"-->
+<!--                            android:background="@drawable/background_button"-->
+<!--                            android:backgroundTint="@color/gray_500"-->
+<!--                            android:drawableLeft="@drawable/ic_more"-->
+<!--                            android:drawablePadding="5dp"-->
+<!--                            android:paddingStart="10dp"-->
+<!--                            android:paddingRight="10dp"-->
+<!--                            android:text="@string/more"-->
+<!--                            android:textAllCaps="false"-->
+<!--                            android:textColor="@color/white"-->
+<!--                            android:textSize="16dp" />-->
+
+
+<!--                    </LinearLayout>-->
+
+<!--                </HorizontalScrollView>-->
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_listSuggest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+        <Button
+            android:id="@+id/btn_route"
+            android:drawableStart="@drawable/ic_traffic_right_turn"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="80dp"
+            android:padding="9dp"
+            android:background="@drawable/background_button_round"
+            android:layout_gravity="bottom|right"
+            android:layout_width="43dp"
+            android:layout_height="43dp"/>
+
+    </vn.map4d.map.core.MFMapView>
+
+
+
+
+
+
+</RelativeLayout>

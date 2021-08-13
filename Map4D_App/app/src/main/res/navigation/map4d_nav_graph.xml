@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map4d_nav_graph"
+    app:startDestination="@id/homeFragment2">
+
+    <fragment
+        android:id="@+id/optionFragment"
+        android:name="com.truongthong.map4d.ui.OptionFragment"
+        android:label="OptionFragment" />
+    <fragment
+        android:id="@+id/savedFragment"
+        android:name="com.truongthong.map4d.ui.SavedFragment"
+        android:label="SavedFragment" />
+    <fragment
+        android:id="@+id/routeLocationFragment"
+        android:name="com.truongthong.map4d.ui.RouteLocationFragment"
+        android:label="fragment_route_location"
+        tools:layout="@layout/fragment_route_location" />
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.truongthong.map4d.ui.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_routeLocationFragment"
+            app:destination="@id/routeLocationFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_savedFragment"
+            app:destination="@id/savedFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_optionFragment"
+            app:destination="@id/optionFragment" />
+    </fragment>
+</navigation>

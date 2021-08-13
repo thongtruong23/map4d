@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Map4D_App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="restaurant">Nhà hàng</string>
+    <string name="search_hint_text">Tìm kiếm trên Map4D</string>
+    <string name="atm">ATM</string>
+    <string name="parking">Bãi đỗ xe</string>
+    <string name="more">Xem thêm</string>
+    <string name="school">Trường học</string>
+    <string name="saved">Đã lưu</string>
+    <string name="map_2d">Map 2D</string>
+    <string name="option">Tùy chọn</string>
+    <string name="language">Ngôn ngữ</string>
+    <string name="info_app">Thông tin ứng dụng</string>
+    <string name="add_location">Thêm địa điểm</string>
+    <string name="list">Danh sách</string>
+    <string name="list_saved"><u>Danh sách</u></string>
+    <string name="add_list">Thêm danh sách</string>
+    <string name="choose">Chọn</string>
+    <string name="your_location">Vị trí của bạn</string>
+    <string name="destination">Chọn điểm đến</string>
+</resources>
